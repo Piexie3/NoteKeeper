@@ -1,6 +1,7 @@
-package manu.notes.featureNotes.presentation.add_edit_note
+package com.example.noteapp.featureNotes.presentation.add_edit_note
 
 import androidx.compose.ui.focus.FocusState
+import com.example.noteapp.featureNotes.presentation.add_edit_note.AddEditNoteEvent
 
 sealed class AddEditNote{
     data class EnteredTitle(val value: String): AddEditNoteEvent()

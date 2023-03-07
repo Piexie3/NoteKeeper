@@ -1,4 +1,4 @@
-package manu.notes.featureNotes.presentation.util
+package com.example.noteapp.featureNotes.presentation.util
 
 sealed class Screen(val route: String) {
     object NotesScreen: Screen("notes_screen")

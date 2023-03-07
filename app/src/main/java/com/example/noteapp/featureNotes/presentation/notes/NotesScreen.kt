@@ -18,9 +18,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
-import manu.notes.featureNotes.presentation.notes.composables.NoteItem
+import com.example.noteapp.featureNotes.presentation.notes.composables.NoteItem
 import manu.notes.featureNotes.presentation.notes.composables.OrderSection
-import manu.notes.featureNotes.presentation.util.Screen
+import com.example.noteapp.featureNotes.presentation.util.Screen
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
@@ -86,7 +86,7 @@ fun NotesScreen(
                 )
             }
             Spacer(modifier = Modifier.height(16.dp))
-            LazyColumn(modifier = Modifier.fillMaxSize()) {
+            LazyColumn(modifier = Modifier.fillMaxSize().padding(bottom = 20.dp)) {
                 items(state.notes) { note ->
                     NoteItem(
                             note = note,

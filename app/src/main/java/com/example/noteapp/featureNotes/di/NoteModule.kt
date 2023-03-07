@@ -7,7 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import com.example.noteapp.featureNotes.data.dataSource.NoteDatabase
-import manu.notes.featureNotes.data.repository.NoteRepositoryImpl
+import com.example.noteapp.featureNotes.data.repository.NoteRepositoryImpl
 import com.example.noteapp.featureNotes.domain.repository.NoteRepository
 import com.example.noteapp.featureNotes.domain.use_cases.AddNote
 import com.example.noteapp.featureNotes.domain.use_cases.GetNote

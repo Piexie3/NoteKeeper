@@ -1,4 +1,4 @@
-package manu.notes.featureNotes.presentation.add_edit_note.composables
+package com.example.noteapp.featureNotes.presentation.add_edit_note.composables
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,6 +11,7 @@ import androidx.compose.ui.focus.FocusState
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.unit.sp
 
 
 @Composable
@@ -39,7 +40,12 @@ fun TransparentHintTextField(
                         }
         )
         if(isHintVisible) {
-            Text(text = hint, style = textStyle, color = Color.DarkGray)
+            Text(
+                text = hint,
+                style = textStyle,
+                fontSize = 20.sp,
+                color = Color.DarkGray
+            )
         }
     }
 }

@@ -1,4 +1,4 @@
-package manu.notes.featureNotes.presentation.add_edit_note
+package com.example.noteapp.featureNotes.presentation.add_edit_note
 
 import androidx.compose.ui.focus.FocusState
 

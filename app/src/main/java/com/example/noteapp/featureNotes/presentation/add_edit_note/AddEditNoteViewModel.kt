@@ -1,4 +1,4 @@
-package manu.notes.featureNotes.presentation.add_edit_note
+package com.example.noteapp.featureNotes.presentation.add_edit_note
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -104,9 +104,9 @@ class AddEditNoteViewModel @Inject constructor(
                         _eventFlow.emit(UiEvent.SaveNote)
                     } catch(e: InvalidNoteException) {
                         _eventFlow.emit(
-                                UiEvent.ShowSnackbar(
-                                        message = e.message ?: "Couldn't save note"
-                                )
+                            UiEvent.ShowSnackbar(
+                                message = e.message ?: "Couldn't save note"
+                            )
                         )
                     }
                 }

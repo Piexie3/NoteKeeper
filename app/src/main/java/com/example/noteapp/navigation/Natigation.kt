@@ -1,6 +1,7 @@
 package com.example.noteapp.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -8,7 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.example.noteapp.featureNotes.presentation.add_edit_note.AddEditNoteScreen
 import com.example.noteapp.featureNotes.presentation.notes.NotesScreen
-import manu.notes.featureNotes.presentation.util.Screen
+import com.example.noteapp.featureNotes.presentation.util.Screen
 
 @Composable
 fun Navigation(

@@ -1,4 +1,4 @@
-package manu.notes.featureNotes.data.repository
+package com.example.noteapp.featureNotes.data.repository
 
 import kotlinx.coroutines.flow.Flow
 import com.example.noteapp.featureNotes.data.dataSource.NoteDao
